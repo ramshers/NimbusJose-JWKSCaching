@@ -47,7 +47,7 @@ public class JWKSCachingController {
     LOGGER.debug("verifyToken Controller invoked....");
     String uname = null;
 
-    if(null == keySource) // if this line is commented, it is to trace calls made to jwks url
+    //if(null == keySource) // if this line is commented, it is to trace calls made to jwks url
       keySource=getKeySource();
     
     ConfigurableJWTProcessor jwtProcessor = new DefaultJWTProcessor();
